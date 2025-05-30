@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    .navbar {
+        background-color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+    .menu {
+      display: flex;
+      gap: 15px;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 16px;
+    }
+
+    .menu a:hover {
+      background-color: skyblue;
+    }
+    .main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 490px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    input, textarea {
+      width: 52%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+        .back-home {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .back-home:hover {
+      background-color: #388E3C;
+    }
+    .footer {
+      padding: 20px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="WebGapp">
+    </div>
+    <div class="menu">
+        <a href="index.html">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="intern.html">Internship</a>
+      <a href="about.html">About Us</a>
+      <a href="map.html">Map</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="main">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Please fill out the form below.</p>
+    <form action="success.html" method="get">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone Number" required>
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+    <a class="back-home" href="index.html">Back to Home</a>
+  <div class="footer">
+    <p><strong>Address:</strong> 123 WebGapp, Madurai, TN</p>
+    <p><strong>Email:</strong> contact@webgapp.com | <strong>Phone:</strong> +91 98765 43210</p>
+  </div>
+
+</body>
+</html>
