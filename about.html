@@ -6,7 +6,7 @@
   <title>About Us - WebGapp</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-            body {
+    body {
       font-family: Arial, sans-serif;
     }
     .navbar {
@@ -19,7 +19,7 @@
       color: white !important;
     }
     .navbar-nav .nav-link:hover {
-      background-color: rgb(0, 255, 115);
+      background-color: #00aeff;
       border-radius: 5px;
     }
     .about-img {
@@ -28,7 +28,11 @@
       border-radius: 10px;
     }
     .back-home {
-      margin-top: 20px;
+      background-color: #60af4c;
+      color: white;
+    }
+    .back-home:hover {
+      background-color: #388E3C;
     }
     footer {
       background-color: #f8f9fa;
@@ -37,27 +41,26 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
-      WebGapp
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="course.html">Courses</a></li>
-        <li class="nav-item"><a class="nav-link" href="intern.html">Internship</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="WebGapp">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="course.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="intern.html">Internship</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <div class="container my-5">
   <h2 class="text-center mb-4">About Us</h2>
@@ -74,8 +77,11 @@
       <img src="image4.jpeg" alt="About WebGapp" class="about-img shadow">
     </div>
   </div>
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn back-home shadow">Back to Home</a>
+    </div>
 </div>
-      <a class="btn btn-success back-home" href="index.html">Back to Home</a>
+
 
 <footer class="text-center text-dark py-4 border-top">
   <div class="container">
