@@ -48,7 +48,7 @@
   </footer>
 
   <script>
-    // Function to get URL parameters
+    
     function getQueryParams() {
       const params = new URLSearchParams(window.location.search);
       return {
@@ -57,7 +57,7 @@
       };
     }
 
-    // Display name and email on the page
+  
     const { name, email } = getQueryParams();
     document.getElementById('userName').textContent = name;
     document.getElementById('userEmail').textContent = email;
