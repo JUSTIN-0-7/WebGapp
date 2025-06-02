@@ -2,136 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Available InternShip</title>
+  <title>Available Internship</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
     }
     .navbar {
-        background-color: black;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
+      background-color: black;
     }
-
-    .logo img {
+    .navbar-brand img {
       height: 50px;
     }
-    .menu {
-      display: flex;
-      gap: 15px;
+    .navbar-nav .nav-link {
+      color: white !important;
     }
-    .menu a {
-      color: white;
-      text-decoration: none;
-      padding: 12px 16px;
-    }
-
-    .menu a:hover {
+    .navbar-nav .nav-link:hover {
       background-color: #00aeff;
+      border-radius: 5px;
     }
-    .main {
-      padding: 40px;
-      text-align: center;
-    }
-    .intern {
-      border: 10px solid #ccc;
-      padding: 20px;
-      margin: 15px;
-      display: inline-block;
-      width: 250px;
-    }
-    .intern img {
-      width: 100%;
+    .course-card img {
       height: 150px;
       object-fit: cover;
     }
+    .course-card:hover{
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
     .register-btn {
-      margin-top: 10px;
-      display: inline-block;
-      padding: 8px 16px;
       background-color: #00aeff;
       color: white;
-      text-decoration: none;
     }
     .register-btn:hover {
       background-color: #002fff;
     }
-        .back-home {
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
+    .back-home {
+      background-color: #60af4c;
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
     }
     .back-home:hover {
       background-color: #388E3C;
     }
-            .footer {
-
+    .footer {
       padding: 20px;
       text-align: center;
-      color: rgb(0, 0, 0);
+      color: black;
     }
   </style>
 </head>
 <body>
 
-  <div class="navbar">
-    <div class="logo">
-      <img src="logo.png" alt="WebGapp">
+  <nav class="navbar navbar-expand-lg shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="WebGapp">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="course.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="intern.html">Internship</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="menu">
-        <a href="index.html">Home</a>
-      <a href="course.html">Courses</a>
-      <a href="intern.html">Internship</a>
-      <a href="about.html">About Us</a>
-      <a href="map.html">Map</a>
-      <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Available Internship</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card course-card shadow">
+          <img src="intern1.avif" class="card-img-top" alt="Internship 1">
+          <div class="card-body text-center">
+            <p class="card-text"><strong>15 days = $ 90 + GST</strong></p>
+            <a href="register.html" class="btn register-btn">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card course-card shadow">
+          <img src="intern2.png" class="card-img-top" alt="Internship 2">
+          <div class="card-body text-center">
+            <p class="card-text"><strong>15 days = $ 80 + GST</strong></p>
+            <a href="register.html" class="btn register-btn">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card course-card shadow">
+          <img src="intern3.jpg" class="card-img-top" alt="Internship 3">
+          <div class="card-body text-center">
+            <p class="card-text"><strong>15 days = $ 70 + GST</strong></p>
+            <a href="register.html" class="btn register-btn">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card course-card shadow">
+          <img src="intern1.avif" class="card-img-top" alt="Internship 1">
+          <div class="card-body text-center">
+            <p class="card-text"><strong>30 days = $ 180 + GST</strong></p>
+            <a href="register.html" class="btn register-btn">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card course-card shadow">
+          <img src="intern2.png" class="card-img-top" alt="Internship 2">
+          <div class="card-body text-center">
+            <p class="card-text"><strong>30 days = $ 160 + GST</strong></p>
+            <a href="register.html" class="btn register-btn">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card course-card shadow">
+          <img src="intern3.jpg" class="card-img-top" alt="Internship 3">
+          <div class="card-body text-center">
+            <p class="card-text"><strong>30 days = $ 140 + GST</strong></p>
+            <a href="register.html" class="btn register-btn">Register</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn back-home shadow">Back to Home</a>
     </div>
   </div>
 
-
-  <div class="main">
-    <h2>Available Internship</h2>
-    <div class="intern">
-      <img src="intern1.avif" alt="Intenship 1">
-      <p><strong>15 days = $ 90 + GST</strong></p>
-      <a class="register-btn" href="register.html">Register</a>
-    </div>
-    <div class="intern">
-      <img src="intern2.png" alt="Internship 2">
-      <p><strong>15 days = $ 80 + GST</strong></p>
-      <a class="register-btn" href="register.html">Register</a>
-    </div>
-    <div class="intern">
-      <img src="intern3.jpg" alt="Internship 3">
-      <p><strong>15 days = $ 70 + GST</strong></p>
-      <a class="register-btn" href="register.html">Register</a>
-    </div>
-        <div class="intern">
-      <img src="intern1.avif" alt="Intenship 1">
-      <p><strong>30 days = $ 180 + GST</strong></p>
-      <a class="register-btn" href="register.html">Register</a>
-    </div>
-        <div class="intern">
-      <img src="intern2.png" alt="Internship 2">
-      <p><strong>30 days = $ 160 + GST</strong></p>
-      <a class="register-btn" href="register.html">Register</a>
-    </div>
-        <div class="intern">
-      <img src="intern3.jpg" alt="Internship 3">
-      <p><strong>30 days = $ 140 + GST</strong></p>
-      <a class="register-btn" href="register.html">Register</a>
-    </div>
-  </div>
-    <a class="back-home" href="index.html">Back to Home</a>
-  <div class="footer">
+  <div class="footer bg-light shadow-sm mt-5">
     <p><strong>Address:</strong> 123 WebGapp, Madurai, TN</p>
     <p><strong>Email:</strong> contact@webgapp.com | <strong>Phone:</strong> +91 98765 43210</p>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    const Name = document.getElementById('name').value;
+    const Email = document.getElementById('email').value;
+    localStorage.setItem('studentName', Name + ' ' + email);
+    window.location.href = 'success.html';
+  });
+</script>
 </body>
 </html>
